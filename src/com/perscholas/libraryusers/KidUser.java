@@ -7,6 +7,15 @@ public class KidUser extends LUser implements LibraryUserI {
     public final static int LENDING_PERIOD = 10;
 
     KidUser(int age) {
+//   Would be better if use a factory pattern or throw an exception if trying to create this
+//   object with argument checking
+//        if(age <= 0 || age > KID_AGE_LIMIT)
+//        {
+//
+//            throw new IllegalArgumentException("Age is not allowed");
+//        }
+//
+
         super();
         this.age = age;
     }

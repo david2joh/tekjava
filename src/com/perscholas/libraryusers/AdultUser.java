@@ -8,6 +8,15 @@ public class AdultUser  extends LUser implements LibraryUserI {
 
 
     AdultUser(int age) {
+//   Would be better if use a factory pattern or throw an exception if trying to create this
+//   object with argument checking
+//        if(age <= ADULT_AGE_FLOOR )
+//        {
+//
+//            throw new IllegalArgumentException("Age is not allowed");
+//        }
+//
+
         super();
         this.age = age;
     }
